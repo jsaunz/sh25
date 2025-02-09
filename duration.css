@@ -1,0 +1,264 @@
+/*body {
+/* Background 
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('PLAY_Bowling.png');
+    background-size: cover;
+}*/
+.container1 {
+    background-color: black;
+    border-radius: 30%;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0;
+    margin-left: 600px;
+    text-align: center;
+}
+h1, p, label {
+    color: white;
+    margin: 5px 0;
+}
+.button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 15px;
+}
+.btn {
+   font-size: 20px;
+    background-color: lightgrey;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: darkred;
+    color: white;
+}
+.btn.active {
+    background-color: darkred;
+    color: white;
+}
+#continue-btn {
+    display: none;
+    font-size: 20px;
+    background-color: lightgrey;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#continue-btn:hover {
+    background-color: darkred;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('PLAY_Bowling.png') no-repeat center center fixed;
+    background-size: cover;
+}
+.container {
+    /*text-align: center;
+    background-color: black;
+    opacity: .6;
+    padding: 30px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+    background-color: black;
+    opacity: .6;
+    border-radius: 30%;
+    margin-bottom: 50px;
+    width: 320 px;
+    height: 320px;
+    display: flex;
+    position: center;
+    right: 400;
+    top: 450px;
+}
+h1 {
+    color: white;
+}
+/* Text */
+p, label {
+    color: white;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px;
+}
+/* Default button style */
+.btn {
+    font-size: 20px;
+    background-color: lightgrey; /* Default grey */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    color: white;
+    background-color: darkred;
+}
+/* Active (selected) button style */
+.btn.active {
+    background-color: darkred; /* Selected button turns dark red */
+    color: white;
+}
+/* Quantity Options */
+.quantity {
+    display: none;
+    margin-top: 15px;
+}
+#continueButton {
+    display: none;
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: lightgrey;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#continueButton:hover {
+    background-color: darkred;
+    color: white;
+}
+
+body {
+    font-family: Ariel, sans-serif;
+}
+
+
+
+#dateSelection {
+    margin-left: 50px;
+    display: grid;
+    height: 400px;
+    float: left;
+    width: 45%;
+    position: relative;
+    right: -60 px;
+    top: 100px;
+}
+
+
+.calender{
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    opacity: .6;
+    box-shadow: 0 0 30px #222222;
+    overflow: hidden;
+    width: 300px;
+    padding: 20px
+    
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.btn {
+    cursor: pointer;
+}
+
+
+#month-year {
+    font-style: bold;
+    font-size: 20px;
+}
+
+
+.weekdays, .days{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.days{
+    height: 200px;
+}
+
+
+.weekdays div, .days div {
+    width: 14.28%;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+
+.days div.selected {
+    background-color: red;
+    color: white;
+}
+
+
+.days div.selected{
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.days div{
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.days div:hover{
+    background-color: white;
+    color: red;
+}
+
+
+#selected-date-message{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#numOfGuest {
+    background-color: black;
+    opacity: .6;
+    border-radius: 30%;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    position: relative;
+    right: 150px;
+    top: 200px;
+}

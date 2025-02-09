@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining Hall Hours</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            background-image: url('background.png');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Roboto', sans-serif;
+            color: #f1ce64;
+            text-align: center;
+        }
+        .circle {
+            background-color: black;
+            opacity: 0.6;
+            width: 600px;
+            height: 600px;
+            border-radius: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50px;
+            padding: 30px;
+        }
+        .menu {
+            position: relative;
+            width: 400px;
+            border-radius: 80px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .menu span {
+            width: 00px;
+            line-height: 80px;
+            display: inline-block;
+            font-weight: 700;
+            text-transform: uppercase;
+            position: absolute;
+            left: 50%;
+            margin-left: -100px;
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
+            pointer-events: none;
+        }
+        .menu nav {
+            font-size: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .menu a {
+            line-height: 90px;
+            width: 300px;
+            text-align: center;
+            display: inline-block;
+            background-color: navy;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 80px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .menu a:hover {
+            color: white;
+        }
+        .menu a:nth-child(1):hover {
+            background-color: rgb(197, 0, 0);
+        }
+        .menu a:nth-child(2):hover {
+            background-color: rgb(207, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="circle">
+        <div class="menu">
+            <nav>
+                <a href="Dining.html">Dining Hall</a>
+                <a href="restaurant.html">Restaurant</a>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>

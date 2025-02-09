@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Container for the image and dropdown */
+        .container {
+            display: flex;
+            align-items: center; /* Vertically align content */
+            justify-content: center;
+            height: 100vh; /* Full viewport height */
+        }
+
+
+        /* Style the image to fit within its container */
+        img {
+            width: 700px;
+            height: auto;
+        }
+
+
+        /* Style the dropdown container */
+        .meal-selection {
+            margin-left: 20px; /* Space between image and dropdown */
+            text-align: center;
+        }
+
+
+        /* Larger font size for the label and dropdown */
+        label, select {
+            font-size: 1.5em;
+        }
+
+
+        select {
+            padding: 10px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body style="background-color: white;">
+    <div class="container">
+        <img src="subwayM.jpg" alt="Subway Menu">
+       
+        <!-- Dropdown menu -->
+        <div class="meal-selection">
+            <label for="meal-selection">Pick your meal:</label>
+            <select id="meal-selection">
+                <option value="" disabled selected>Select a number</option>
+                <option value="1">Sub Sandwich</option>
+                <option value="2">Wraps</option>
+                <option value="3">Salads</option>
+                <option value="4">Cookies</option>
+                <option value="5">Drinks</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>

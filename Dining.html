@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <title>Dining Hall Hours</title>
+    <style>
+        body {
+            background-image: url('background.png');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Black circle with text */
+        .circle {
+            background-color: black;
+            opacity: .6;
+            width: 600px;
+            height: 600px;  /* Adjust height to accommodate the text */
+            border-radius: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 50px;  /* Adjust this value to move the circle up/down */
+            padding: 30px;
+        }
+        .circle h1 {
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 36px;  /* Larger font size to match the circle size */
+            margin: 0 0 20px 0;
+        }
+        .circle ul {
+            color: white;
+            text-align: left;
+            list-style-position: inside;
+            margin: 0;
+            padding: 0;
+            font-size: 20px; /* Adjusted font size for proportionality */
+        }
+        .circle li {
+            margin-bottom: 10px; /* Space between list items */
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            margin: 0 auto;
+        }
+        .button-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Black circle with Dining Hall Hours text and bullet points -->
+    <div class="circle">
+        <h1>Dining Hall Hours</h1>
+        <ul>
+            <li>Monday - Friday: 10am - 10pm</li>
+            <li>Saturday - Sunday: Noon - 10pm</li>
+        </ul>
+    </div>
+</body>

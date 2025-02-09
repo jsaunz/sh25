@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Container for the image and the dropdown */
+        .container {
+            display: flex;
+            align-items: center; /* Vertically align content */
+        }
+        /* Style the image to keep its size */
+        img {
+            width: 625px;
+            height: 700px;
+        }
+        /* Style the dropdown container */
+        .meal-selection {
+            margin-left: 20px; /* Space between image and dropdown */
+            text-align: center;
+        }
+        /* Larger font size for the label and dropdown */
+        label, select {
+            font-size: 1.5em;
+        }
+        select {
+            padding: 10px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body style="background-color: white;">
+    <h1 style="color: black;">Moes</h1>
+   
+    <div class="container">
+        <img src="https://restaurantmenuguide.wordpress.com/wp-content/uploads/2010/12/27680-moes-southwest-grill-5x11-5-4-13.jpg" alt="Moes Image">
+       
+        <!-- Dropdown menu -->
+        <div class="meal-selection">
+            <label for="meal-selection">Pick your meal:</label>
+            <select id="meal-selection">
+                <option value="" disabled selected>Select a number</option>
+                <option value="1">Burritos</option>
+                <option value="2">Kids Menu</option>
+                <option value="3">Salads</option>
+                <option value="4">Chips and salsa</option>
+                <option value="5">Moe Mondays</option>
+            </select>
+        </div>
+    </div>
+</body>

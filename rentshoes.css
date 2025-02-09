@@ -1,0 +1,14 @@
+#dateselection {
+    border: 1px solid red;
+    height: 200px;
+    float: left;
+    width:45%;
+}
+
+
+#numOfGuest {
+    border: 1px dotted blue;
+    height: 400px;
+    float: right;
+    width: 45%;
+}

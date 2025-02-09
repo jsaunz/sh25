@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowling Shoes</title>
+    <link rel="stylesheet" href="duration.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SHOE RENTAL</h1>
+        <p id="message"></p> <!-- Message will be shown here -->
+
+        <!-- Button options instead of dropdown -->
+        <label>Would you like to rent bowling shoes?</label>
+        <label> Cost per pair: $4.00</label>
+        <div class="button-container">
+            <button class="btn" onclick="selectOption('yes', this)">Yes</button>
+            <button class="btn" onclick="selectOption('no', this)">No</button>
+        </div>
+
+        <!-- Hiding quantity options -->
+        <div id="quantity" class="quantity">
+            <label for="shoeCount">Quantity: </label>
+            <select id="shoeCount"></select> <!-- Options will be added dynamically -->
+            <p id="totalAmount"></p> <!-- Total Amount Display -->
+        </div>
+
+        <!-- Continue Button -->
+        <button id="continueButton"onclick="selectOption('continue', this)">Continue</button>
+    </div>
+
+    <script>
+        function selectOption(choice, button) {
+            const message = document.getElementById('message');
+            const quantity = document.getElementById('quantity');
+            const shoeCountSelect = document.getElementById('shoeCount');
+            const totalAmount = document.getElementById('totalAmount');
+            const continueButton = document.getElementById('continueButton');
+
+            document.querySelectorAll('.btn').forEach(btn => btn.classList.remove('active'));
+
+            // Highlight the selected button
+            button.classList.add('active');
+
+            continueButton.style.display = 'block';
+
+            if (choice === 'yes') {
+                message.textContent = "You have selected to rent bowling shoes.";
+
+                // Show the extra options section
+                quantity.style.display = 'block';
+
+                // Clear previous options and populate new ones (1 to 12)
+                shoeCountSelect.innerHTML = "";
+                for (let i = 1; i <= 12; i++) {
+                    const option = document.createElement('option');
+                    option.value = i;
+                    option.textContent = i;
+                    shoeCountSelect.appendChild(option);
+                }
+
+                // Add event listener for the shoe count dropdown
+                shoeCountSelect.addEventListener('change', function() {
+                    const count = parseInt(this.value);
+                    const pricePerPair = 7.00; // Price per pair
+                    const total = count * pricePerPair;
+                    totalAmount.textContent = `Total Amount: $${total}.00`;
+                });
+
+            } else if (choice === 'no') {
+                message.textContent = "You have decided not to rent bowling shoes.";
+
+                // Hide extra options but keep the continue button visible
+                extraOptions.style.display = 'none';
+                totalAmount.textContent = '';
+            } else if (choice === 'continue') {
+                window.location.href = "finalPayment.html";
+            }
+        }
+    </script>
+</body>
+</html>

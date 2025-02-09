@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+    <link rel="stylesheet" href="duration.css">
+</head>
+<body>
+    <script src="duration.js"></script>
+    
+    <div id = "dateSelection">
+        <h1>DATE</h1>
+        <p> 1. Choose A Date:</p>
+        <div class="calender">
+            <div class="header">
+                <div id="prev" class="btn"><i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div id="month-year"></div>
+                <div id="next" class="btn"><i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class ="days" id="days"></div>
+        </div>
+    </div>
+    <div>
+        <div id = "numOfGuest">
+            <h1>GUESTS</h1>
+            <p>Number of Guests:</p>
+            <p > Choose Guest amount?</p>
+            <select>
+                <option value = "option1">  </option>
+                <option value = "option2"> 1 </option>
+                <option value = "option3"> 2 </option>
+                <option value = "option4"> 3 </option>
+                <option value = "option5"> 4 </option>
+                <option value = "option6"> 5 </option>
+                <option value = "option7"> 6 </option>
+                <option value = "option8"> 7 </option>
+                <option value = "option9"> 8 </option>
+                <option value = "option10"> 9 </option>
+                <option value = "option11"> 10 </option>
+                <option value = "option12"> 11 </option>
+                <option value = "option13"> 12 </option>
+        </select>
+        </div>
+       
+    </div>
+
+        <div class="container">
+        <h1>RESERVATIONS</h1>
+        <label>Select the duration of your reservation</label>
+        <div class="button-container">
+            <button class="btn" onclick="selectTime(1, this)">1 Hour</button>
+            <button class="btn" onclick="selectTime(2, this)">2 Hours</button>
+        </div>
+        <p id="message"></p>
+        <button id="continue-btn" onclick="continueAction()">Continue</button>
+    </div>
+    <script>
+        function selectTime(hours, button) {
+            // document.getElementById("message").textContent = `You have selected ${hours} hour${hours > 1 ? 's' : ''}.`;
+            document.querySelectorAll('.btn').forEach(btn => btn.classList.remove('active'));
+            // Button activation
+            button.classList.add('active');
+            // Show the Continue button
+            document.getElementById("continue-btn").style.display = "block";
+        }
+        function continueAction() {
+            window.location.href = "Shoes page.html";
+        } 
+    </script>
+</body>
+</html>

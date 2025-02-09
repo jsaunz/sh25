@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <title>Dining Hall Hours</title>
+    <style>
+        body {
+            background-image: url('background.png');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        /* Black circle with text */
+        .circle {
+            background-color: black;
+            opacity: 0.7;
+            width: 650px;
+            height: 700px;  
+            border-radius: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 50px;
+            padding: 40px;
+        }
+
+
+        .circle h1 {
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 50px;
+            margin: 0 0 30px 0;
+        }
+
+
+        .button-container,
+        .button-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+
+        button {
+            font-size: 22px;
+            padding: 15px 30px;
+            width: 180px;
+            height: 80px;
+            border: none;
+            border-radius: 10px;
+            background-color: navy;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+
+        button:hover {
+            background-color: red;
+        }
+
+
+        /* Payment button styling */
+        .payment-button {
+            background-color: red;
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+
+
+        .payment-button:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- Black circle with Dining Hall Hours text and bullet points -->
+    <div class="circle">
+        <h1>Restaurants</h1>
+        <div class="button-container">
+            <a href="Chick-fil-a.html">
+                <button>Chick-fil-A</button>
+            </a>
+            <a href="PandaExpress.html">
+                <button>Panda Express</button>
+            </a>
+            <a href="moes.html">
+                <button>Moe's</button>
+            </a>
+        </div>
+        <br>
+        <div class="button-row">
+            <a href="subway.html">
+                <button>Subway</button>
+            </a>
+            <a href="HalalShack.html">
+                <button>Halal Shack</button>
+            </a>
+        </div>
+        <br>
+        <!-- Payment button -->
+        <a href="FForcard.html">
+            <button class="payment-button">Payment</button>
+        </a>
+    </div>
+</body>

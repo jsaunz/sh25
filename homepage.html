@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="homepage.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="uiclogo">
+        <p>h</p>
+    </div>
+    <div id="bowlingAnimate"></div>
+    <div id = "headBkg">
+        <div id="millenniumLanes">
+            <h1 id="head">*MILLENNIUM LANES*</h1>
+        </div>
+        <div class="info">
+            <h1>Student Center East</h1>
+            <h2>750 S. Halsted</h2>
+            <h3>Chicago,</h3>
+            <h4>Illinois,</h4>
+            <h5>60607.</h5>
+        </div>
+    </div>
+    <div id="reserveBtn">
+        <button class="btn1" onclick="introOption('reserve', this)">Reserve</button>
+        <button class="btn2" onclick="introOption('dining', this)">Dining</button>
+    </div>
+    <div id="foodBtn"></div>
+
+    <script> 
+    function introOption(choice, button) {
+        if (choice === 'reserve') {
+            window.location.href = "Duration Page.html";
+        } else if (choice === 'dining') {
+            window.location.href ="DiningAndRestaurant.html";
+        }
+    }
+    </script>
+        
+</body>
+</html>

@@ -1,0 +1,62 @@
+body{
+    background: url('introbackground.png');
+    background-size: cover;
+}
+#uiclogo{
+    background: url('uic.png');
+    background-size: 100px;
+}
+#head {
+    font-size: 65px;
+    text-align: center;
+    color:red;
+    font-family: "Franklin Gothic Medium";
+    
+
+}
+.info h1, .info h2, .info h3, .info h4, .info h5{
+    font-size: 50px;
+    position: relative;
+    left: 150px;
+    top: 50px;
+    color: white;
+    font-family: "Courier";
+    display: block;  /* Ensures each element takes full width */
+    margin: 0;       /* Removes any unwanted spacing */
+    padding: 2px 0;  /* Adds a little spacing */
+}
+.btn1 {
+    background-color: navy; 
+    border: 15px;
+    border-radius: 40px;
+    color: white;
+    padding: 30px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    left: 400px;
+    top: 100px;
+}
+.btn1:hover {
+    background-color: red;
+}
+.btn2 {
+    background-color: navy; 
+    border: 15px;
+    border-radius: 40px;
+    color: white;
+    padding: 30px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    left: 700px;
+    top: 100px;
+}
+
+.btn2:hover {
+    background-color: red;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Container for the image and dropdown */
+        .container {
+            display: flex;
+            align-items: center; /* Vertically align content */
+            justify-content: center;
+            height: 100vh; /* Full viewport height */
+        }
+
+
+        /* Style the image to fit within its container */
+        img {
+            width: 700px; /* Set width of the image */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+
+        /* Style the dropdown container */
+        .meal-selection {
+            margin-left: 20px; /* Space between image and dropdown */
+            text-align: center;
+        }
+
+
+        /* Larger font size for the label and dropdown */
+        label, select {
+            font-size: 1.5em;
+        }
+
+
+        select {
+            padding: 10px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body style="background-color: white;">
+    <div class="container">
+        <img src="Halal-1.jpg" alt="Halal Menu">
+       
+        <!-- Dropdown menu -->
+        <div class="meal-selection">
+            <label for="meal-selection">Pick your meal:</label>
+            <select id="meal-selection">
+                <option value="" disabled selected>Select a meal</option>
+                <option value="1">Chicken Shawarma</option>
+                <option value="2">Pita Wrap</option>
+                <option value="3">Falafel</option>
+                <option value="4">Fries Bowl</option>
+                <option value="5">Salad Bowl</option>
+                <option value="5">Rice Bowl</option>
+                <option value="5">Nannarito</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>
